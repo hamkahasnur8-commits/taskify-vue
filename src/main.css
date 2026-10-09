@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+	font-family: 'DM Sans', sans-serif;
+	color: #3b2028;
+	background: #e9ded7;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	--paper: #e9ded7;
+	--surface: #f1e7e1;
+	--ink: #3b2028;
+	--oxblood: #612735;
+	--red: #a34d56;
+	--sage: #829083;
+	--sage-light: #e2d9d5;
+	--clay: #a64f49;
+	--gold: #a77f55;
+	--teal: #66807e;
+	--muted: #716564;
+	--line: rgba(59, 32, 40, 0.16);
+	--display: 'Bebas Neue', Impact, 'Arial Narrow', sans-serif;
+	--body: 'DM Sans', sans-serif;
+	scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	min-width: 320px;
+	min-height: 100vh;
+	margin: 0;
+	background: var(--paper);
+}
+
+button,
+a,
+input,
+textarea,
+select {
+	color: inherit;
+	font: inherit;
+}
+
+button,
+a {
+	-webkit-tap-highlight-color: transparent;
+}
+
+button {
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+	outline: 2px solid var(--ink);
+	outline-offset: 3px;
+}
+
+
+::selection {
+	color: var(--paper);
+	background: var(--oxblood);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		scroll-behavior: auto !important;
+	}
+}
